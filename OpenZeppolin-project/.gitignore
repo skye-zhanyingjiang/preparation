@@ -1,4 +1,7 @@
-node_modules
+# Node.js dependencies
+node_modules/
+
+# Environment files
 .env
 
 # Hardhat files
@@ -13,5 +16,17 @@ node_modules
 /coverage
 /coverage.json
 
-# Hardhat Ignition default folder for deployments against a local node
+# Hardhat Ignition deployments
 ignition/deployments/chain-31337
+
+# Other common ignore patterns
+/dist
+/build
+/.next
+/.nuxt
+/.sass-cache
+/coverage
+*.log
+*.tmp
+.DS_Store
+*.pem
