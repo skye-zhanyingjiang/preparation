@@ -40,6 +40,20 @@ Hardhat 是一个基于 Node.js 的开发框架，专门用于以太坊智能合
 
 Hardhat 还内置了 Hardhat Network，这是⼀个专为开发而设计的本地以太坊网络。它允许您部署合约、运行测试和调试代码。同时也支持将合约部署到不同的外部的evm网络上； 练习 - 安装 Solidity VS Code 扩展 Solidity VSCode 扩展：此扩展向 Visual Studio Code 添加了对 Solidity 的语言支持，并为 Hardhat 项目提供了编辑器集成，以及对 Foundry、Truffle 和 Ape 项目的实验性支持
 
-npm init
+```shell
+前提 : 切换到项目目录根下执行以下命令
 
-npm install --save-dev hardhat
+npm初始化: npm init
+
+安装hardhat: npm install --save-dev hardhat
+
+hardhat初始化: npx hardhat init
+
+编译: npx hardhat compile
+
+启用本地网络: npx hardhat node
+
+部署合约到hardhat : npx hardhat ignition deploy ignition/modules/Shipping.js --network localhost
+
+执行测试: npx hardhat test test/Shipping.js
+```
